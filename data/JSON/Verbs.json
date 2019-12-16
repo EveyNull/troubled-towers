@@ -1,0 +1,801 @@
+[
+{
+  "Name":"GET",
+  "Actions":
+  [
+	{
+	  "TargetObject":0,
+	  "Reactions": 
+	  [
+		{
+			"ActionID":1,
+			"ActionTarget":0,
+			"RequiredObjects":
+			[
+			],
+			"Parameters":
+			[
+			]
+		}
+	  ],
+	  "ReturnString":"",
+	  "FailureString":"YOU CAN'T PICK THAT UP"
+	},
+	{
+	  "TargetObject":6,
+	  "Reactions":
+	  [
+	    {
+		  "ActionID":1,
+		  "ActionTarget":6,
+		  "RequiredObjects":
+		  [
+		    {
+		    "ID":10,
+			"State":1
+			}
+		  ]
+		}
+	  ],
+	  "ReturnString":"YOU FISH THE DOLL OUT OF THE TOILET. UGH!",
+	  "FailureString":"THE STENCH IS TOO STRONG, UGH"
+	}
+  ]
+},
+{
+  "Name":"HELP",
+  "Actions":
+  [
+  
+  ]
+},
+{
+  "Name":"GO",
+  "Actions":
+  [
+  
+  ]
+},
+{
+  "Name":"EXAMINE",
+  "Actions":
+  [
+	{
+	  "TargetObject":0,
+	  "Reactions": 
+	  [
+		{
+			"ActionID":0,
+			"ActionTarget":0,
+			"RequiredObjects":
+			[
+			],
+			"Parameters":
+			[
+			]
+		}
+	  ],
+	  "ReturnString":"",
+	  "FailureString":""
+	},
+	{
+	  "TargetObject":9,
+	  "Reactions":
+	  [
+	    {
+		  "ActionID":0,
+		  "ActionTarget":9,
+		  "RequiredObjects":
+		  [
+		  ],
+		  "Parameters":
+		  [
+		  ]
+		},
+		{
+		  "ActionID":8,
+		  "ActionTarget":17,
+		  "RequiredObjects":
+		  [
+			{
+			  "ID":9,
+			  "State":1
+			}
+		  ],
+		  "Parameters":
+		  [
+		    18,
+			3
+		  ]
+		}
+	  ],
+	  "ReturnString":"",
+	  "FailureString":""
+	}
+  ]
+},
+{
+  "Name":"LIGHT",
+  "Actions":
+  [
+	{
+	  "TargetObject":14,
+	  "Reactions":
+	  [
+	    {
+		  "ActionID":4,
+		  "ActionTarget":14,
+		  "RequiredObjects":
+		  [
+		    {
+		      "ID":2,
+			  "State":0
+			},
+			{
+			  "ID":14,
+			  "State":0
+			}
+		  ],
+		  "Parameters":
+		  [
+		    1
+		  ]
+		}
+	  ],
+	  "ReturnString":"YOU LIGHT THE FIREPLACE",
+	  "FailureString":"YOU'D NEED SOMETHING TO LIGHT IT WITH"
+	},
+	{
+	  "TargetObject":1,
+	  "Reactions":
+	  [
+	    {
+		  "ActionID":4,
+		  "ActionTarget":1,
+		  "RequiredObjects":
+		  [
+		    {
+			  "ID":2,
+			  "State":0
+			},
+			{
+			  "ID":1,
+			  "State":0
+			}
+		  ],
+		  "Parameters":
+		  [
+		    1
+		  ]
+		}
+	  ],
+	  "ReturnString":"YOU LIGHT THE CANDLE",
+	  "FailureString":"YOU'D NEED SOMETHING TO LIGHT IT WITH"
+	}
+  ]
+},
+{
+  "Name":"OPEN",
+  "Actions":
+  [
+	{
+	  "TargetObject":16,
+	  "Reactions": 
+	  [
+	    {
+			"ActionID":1,
+			"ActionTarget":9,
+			"RequiredObjects":
+			[
+			],
+			"Parameters":
+			[
+			]
+	    }
+	  ],
+	  "ReturnString":"INSIDE THE DESK YOU FIND A SPOOKY LOOKING NOTE",
+	  "FailureString":""
+	}
+  ]
+},
+{
+  "Name":"BURN",
+  "Actions":
+  [
+	{
+	  "TargetObject":9,
+	  "Reactions": 
+	  [
+	    {
+	    "ActionID":4,
+		"ActionTarget":9,
+		"RequiredObjects":
+		[
+		  {
+		    "ID":14,
+			"State":1
+		  }
+		],
+		"Parameters":
+		[
+		  1
+		]
+		}
+	  ],
+	  "ReturnString":"YOU LIGHT THE NOTE ON FIRE. DIFFERENT WRITING APPEARS!",
+	  "FailureString":"YOU CAN'T BURN IT JUST IN YOUR HANDS!"
+	}
+  ]
+},
+{
+  "Name":"FLUSH",
+  "Actions":
+  [
+	{
+	  "TargetObject":13,
+	  "Reactions": 
+	  [
+		  {
+			"ActionID":6,
+			"ActionTarget":6,
+			"RequiredObjects":
+			[
+			{
+			  "ID":13,
+			  "State":0
+			  }
+			],
+			"Parameters":
+			[
+			  19
+			]
+		  },
+		  {
+		    "ActionID":4,
+			"ActionTarget":13,
+			"RequiredObjects":
+			[
+			{
+			  "ID":13,
+			  "State":0
+			  }
+			],
+			"Parameters":
+			[
+			  1
+			]
+		  }
+	  ],
+	  "ReturnString":"IT BACKS UP IMMEDIATELY, UGH! SOMETHING FLOATS TO THE SURFACE",
+	  "FailureString":"YOU MIGHT FLOOD THE WHOLE ROOM IF YOU DO THAT!"
+	}
+  ]
+},
+{
+  "Name":"WEAR",
+  "Actions":
+  [
+	{
+	  "TargetObject":10,
+	  "Reactions": 
+	  [
+		  {
+		    "ActionID":4,
+			"ActionTarget":10,
+			"RequiredObjects":
+			[
+			{
+			  "ID":10,
+			  "State":0
+			}
+			],
+			"Parameters":
+			[
+			  1
+			]
+		  }
+	  ],
+	  "ReturnString":"YOU WRAP THE TOWEL AROUND YOUR HEAD AS A MAKESHIFT MASK",
+	  "FailureString":"YOU'RE ALREADY WEARING IT!"
+	  
+	},
+	{
+	  "TargetObject":8,
+	  "Reactions": 
+	  [
+		  {
+		    "ActionID":4,
+			"ActionTarget":8,
+			"RequiredObjects":
+			[
+			{
+			  "ID":8,
+			  "State":0
+			}
+			],
+			"Parameters":
+			[
+			  1
+			]
+		  }
+	  ],
+	  "ReturnString":"YOU HANG THE AMULET AROUND YOUR NECK. FEELS SAFE!",
+	  "FailureString":"YOU'RE ALREADY WEARING IT!"
+	}
+  ]
+},
+{
+  "Name":"USE",
+  "Actions":
+  [
+	{
+	  "TargetObject":15,
+	  "Reactions": 
+	  [
+	    {
+	    "ActionID":4,
+		"ActionTarget":15,
+		"RequiredObjects":
+		[
+		 {
+		  "ID":15,
+		  "State":0
+		 }
+		],
+		"Parameters":
+		[
+		  1
+		]
+		}
+	  ],
+	  "ReturnString":"YOU TURN THE TAP ON AND WATER STREAMS FROM THE FAUCET",
+	  "FailureString":"IT'S ALREADY RUNNING"
+	},
+	{
+	  "TargetObject":19,
+	  "Reactions":
+	  [
+	    {
+		  "ActionID":4,
+		  "ActionTarget":20,
+		  "RequiredObjects":
+		  [
+		    {
+			  "ID":20,
+			  "State":0
+			}
+		  ],
+		  "Parameters":
+		  [
+		    1
+		  ]
+		},
+		{
+		  "ActionID":2,
+		  "ActionTarget":19,
+		  "RequiredObjects":
+		  [
+		  ],
+		  "Parameters":
+		  [
+		  ]
+		},
+		{
+		  "ActionID":8,
+		  "ActionTarget":20,
+		  "RequiredObjects":
+		  [
+		  ],
+		  "Parameters":
+		  [
+		    21,
+			4
+		  ]
+		}
+	  ],
+	  "ReturnString":"YOU MANAGE TO HOOK THE ROPE AROUND THE DRAINPIPE AND TIE IT",
+	  "FailureString":"YOU CAN'T SEE ANYTHING YOU'D WANT TO TIE THIS TO"
+	},
+	{
+	  "TargetObject":21,
+	  "Reactions":
+	  [
+	    {
+		  "ActionID":4,
+		  "ActionTarget":21,
+		  "RequiredObjects":
+		  [
+		    {
+			  "ID":21,
+			  "State":1
+			}
+		  ],
+		  "Parameters":
+		  [
+		    2
+		  ]
+		},
+		{
+		  "ActionID":7,
+		  "ActionTarget":23,
+		  "RequiredObjects":
+		  [
+		  ],
+		  "Parameters":
+		  [
+		    16
+		  ]
+		},
+		{
+		  "ActionID":3,
+		  "ActionTarget":0,
+		  "RequiredObjects":
+		  [
+		  ],
+		  "Parameters":
+		  [
+		    2
+		  ]
+		}
+	  ],
+	  "ReturnString":"THE GHOST WATCHES TELEVISION A WHILE BEFORE DISAPPEARING",
+	  "FailureString":"A BURST OF STATIC! LOOKS LIKE THERE'S NO SIGNAL."
+	}
+  ]
+},
+{
+  "Name":"FILL",
+  "Actions":
+  [
+	{
+	  "TargetObject":18,
+	  "Reactions": 
+	  [
+	    {
+	    "ActionID":4,
+		"ActionTarget":18,
+		"RequiredObjects":
+		[
+		  {
+		    "ID":15,
+			"State":1
+		  }
+		],
+		"Parameters":
+		[
+		  1
+		]
+		}
+	  ],
+	  "ReturnString":"YOU FILL THE GLASS FROM THE TAP",
+	  "FailureString":"YOU NEED A SOURCE OF WATER"
+	}
+  ]
+},
+{
+  "Name":"BLESS",
+  "Actions":
+  [
+	{
+	  "TargetObject":18,
+	  "Reactions": 
+	  [
+	    {
+	    "ActionID":4,
+		"ActionTarget":18,
+		"RequiredObjects":
+		[
+		  {
+		    "ID":18,
+			"State":1
+		  },
+		  {
+		    "ID":4,
+			"State":0
+		  }
+		],
+		"Parameters":
+		[
+		  2
+		]
+		}
+	  ],
+	  "ReturnString":"YOU DIP THE CRUCIFIX IN THE WATER. IT'S HOLIER NOW!",
+	  "FailureString":"THAT DOESN'T NEED BLESSING"
+	}
+  ]
+},
+{
+  "Name":"ATTACK",
+  "Actions":
+  [
+	{
+	  "TargetObject":12,
+	  "Reactions": 
+	  [
+		{
+	    "ActionID":7,
+		"ActionTarget":12,
+		"RequiredObjects":
+		[
+		  {
+		    "ID":18,
+			"State":2
+		  },
+		  {
+		    "ID":8,
+			"State":1
+		  }
+		],
+		"Parameters":
+		[
+		  18
+		]
+		},
+		{
+	    "ActionID":6,
+		"ActionTarget":7,
+		"RequiredObjects":
+		[
+		  {
+		    "ID":18,
+			"State":2
+		  },
+		  {
+		    "ID":8,
+			"State":1
+		  }
+		],
+		"Parameters":
+		[
+		  18
+		]
+		}
+	  ],
+	  "ReturnString":"YOU THROW THE HOLY WATER OVER THE DEMON. IT SCREECHES AND DIES! SOMETHING FALLS TO THE FLOOR.",
+	  "FailureString":"YOU NEED AN EFFECTIVE WEAPON... AND SOMETHING TO PROTECT YOURSELF!"
+	},
+	{
+	  "TargetObject":0,
+	  "Reactions":
+	  [
+	  ],
+	  "ReturnString":"THAT'S VERY VIOLENT!",
+	  "FailureString":""
+	}
+  ]
+},
+{
+  "Name":"DRESS",
+  "Actions":
+  [
+	{
+	  "TargetObject":6,
+	  "Reactions": 
+	  [
+	    {
+	    "ActionID":4,
+		"ActionTarget":6,
+		"RequiredObjects":
+		[
+		  {
+		    "ID":7,
+			"State":0
+		  }
+		],
+		"Parameters":
+		[
+		  1
+		]
+		},
+		{
+	    "ActionID":2,
+		"ActionTarget":7,
+		"RequiredObjects":
+		[
+		  {
+		    "ID":7,
+			"State":0
+		  }
+		],
+		"Parameters":
+		[
+		]
+		}
+	  ],
+	  "ReturnString":"YOU DRESS THE DOLLY WITH ITS BOW",
+	  "FailureString":"YOU DON'T HAVE ANYTHING MORE TO DRESS IT WITH"
+	}
+  ]
+},
+{
+  "Name":"GIVE",
+  "Actions":
+  [
+	{
+	  "TargetObject":6,
+	  "Reactions": 
+	  [
+	    {
+	    "ActionID":3,
+		"ActionTarget":0,
+		"RequiredObjects":
+		[
+		  {
+		    "ID":6,
+			"State":1
+		  },
+		  {
+		    "ID":17,
+			"State":0
+		  }
+		],
+		"Parameters":
+		[
+		  0
+		]
+		},
+		{
+	    "ActionID":7,
+		"ActionTarget":17,
+		"RequiredObjects":
+		[
+		],
+		"Parameters":
+		[
+		  8
+		]
+		},
+		{
+	    "ActionID":2,
+		"ActionTarget":6,
+		"RequiredObjects":
+		[
+		],
+		"Parameters":
+		[
+		]
+		}
+	  ],
+	  "ReturnString":"THE SMALL GHOST TAKES THE DOLL IN ITS HANDS AND DISAPPEARS WITH A SMILE",
+	  "FailureString":"IT SHAKES ITS HEAD. SOMETHING ISN'T RIGHT WITH THE DOLL"
+	},
+	{
+	  "TargetObject":3,
+	  "Reactions": 
+	  [
+	    {
+	    "ActionID":3,
+		"ActionTarget":0,
+		"RequiredObjects":
+		[
+		  {
+		    "ID":3,
+			"State":1
+		  },
+		  {
+		    "ID":11,
+			"State":0
+		  }
+		],
+		"Parameters":
+		[
+		  1
+		]
+		},
+		{
+	    "ActionID":7,
+		"ActionTarget":11,
+		"RequiredObjects":
+		[
+		],
+		"Parameters":
+		[
+		  7
+		]
+		},
+		{
+	    "ActionID":2,
+		"ActionTarget":3,
+		"RequiredObjects":
+		[
+		],
+		"Parameters":
+		[
+		]
+		}
+	  ],
+	  "ReturnString":"THE ADULT GHOST HUNGRILY GRABS THE PLATE BEFORE DISAPPEARING",
+	  "FailureString":"IT DOESN'T WANT AN EMPTY PLATE!"
+    },
+	{
+	  "TargetObject":0,
+	  "Reactions":
+	  [
+	  ],
+	  "ReturnString":"IT DOESN'T WANT IT.",
+	  "FailureString":""
+	}
+  ]
+},
+{
+  "Name":"SERVE",
+  "Actions":
+  [
+	{
+	  "TargetObject":5,
+	  "Reactions": 
+	  [
+	    {
+	    "ActionID":4,
+		"ActionTarget":3,
+		"RequiredObjects":
+		[
+		  {
+		    "ID":3,
+			"State":0
+		  }
+		],
+		"Parameters":
+		[
+		  1
+		]
+		},
+	    {
+	    "ActionID":4,
+		"ActionTarget":5,
+		"RequiredObjects":
+		[
+		],
+		"Parameters":
+		[
+		  1
+		]
+		}
+	  ],
+	  "ReturnString":"YOU POUR THE BEANS ONTO THE PLATE. DELICIOUS!",
+	  "FailureString":"YOU NEED SOMETHING TO SERVE IT ON"
+	}
+  ]
+},
+{
+  "Name":"FIX",
+  "Actions":
+  [
+    {
+	  "TargetObject":22,
+	  "Reactions": 
+	  [
+	    {
+	    "ActionID":4,
+		"ActionTarget":21,
+		"RequiredObjects":
+		[
+		  {
+		    "ID":22,
+			"State":0
+		  }
+		],
+		"Parameters":
+		[
+		  1
+		]
+		},
+	    {
+	    "ActionID":4,
+		"ActionTarget":22,
+		"RequiredObjects":
+		[
+		],
+		"Parameters":
+		[
+		  1
+		]
+		}
+	  ],
+	  "ReturnString":"YOU WIGGLE THE ANTENNA AROUND. THAT LOOKS BETTER!",
+	  "FailureString":"NO POINT MESSING IT AROUND ANY MORE"
+	}
+  ]
+}
+]
